@@ -6,27 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Graphics-surfaceflinger | Hexo</title>
+  <title>Graphics-surfaceflinger | qwerhyc的笔记</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="SurfaceFlinger 接受缓冲区，对它们进行合成，然后发送到屏幕。WindowManager 为 SurfaceFlinger 提供缓冲区和窗口元数据，而 SurfaceFlinger 可使用这些信息将 Surface 合成到屏幕。  每位开发者都应了解有关 Surface、SurfaceHolder、EGLSurface、SurfaceView、GLSurfaceView、Surface">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Graphics-surfaceflinger">
-<meta property="og:url" content="http://example.com/2024/12/03/Graphics-surfaceflinger/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:url" content="http://example.com/2024/12/02/Graphics-surfaceflinger/index.html">
+<meta property="og:site_name" content="qwerhyc的笔记">
 <meta property="og:description" content="SurfaceFlinger 接受缓冲区，对它们进行合成，然后发送到屏幕。WindowManager 为 SurfaceFlinger 提供缓冲区和窗口元数据，而 SurfaceFlinger 可使用这些信息将 Surface 合成到屏幕。  每位开发者都应了解有关 Surface、SurfaceHolder、EGLSurface、SurfaceView、GLSurfaceView、Surface">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2024/12/03/Graphics-surfaceflinger/ape-fwk-graphics.png">
-<meta property="article:published_time" content="2024-12-03T15:10:05.000Z">
-<meta property="article:modified_time" content="2024-12-03T15:22:22.522Z">
-<meta property="article:author" content="John Doe">
+<meta property="og:image" content="http://example.com/2024/12/02/Graphics-surfaceflinger/ape-fwk-graphics.png">
+<meta property="article:published_time" content="2024-12-02T15:10:05.000Z">
+<meta property="article:modified_time" content="2024-12-05T10:26:49.841Z">
+<meta property="article:author" content="qwerhyc">
 <meta property="article:tag" content="Graphics">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2024/12/03/Graphics-surfaceflinger/ape-fwk-graphics.png">
+<meta name="twitter:image" content="http://example.com/2024/12/02/Graphics-surfaceflinger/ape-fwk-graphics.png">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="qwerhyc的笔记" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/assets/favicon.jpg">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -50,7 +50,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/img/zhou.jpg" class="js-avatar">
+			<img src="/assets/zhou.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/"></a></h1>
@@ -62,7 +62,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+				<li><a href="/">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -84,13 +84,9 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://github.com/qwerhyc" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="mail" target="_blank" href="https://mail.163.com/" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -108,7 +104,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/img/zhou.jpg" class="js-avatar">
+				<img src="/assets/zhou.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author"></h1>
@@ -125,13 +121,9 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/qwerhyc" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="mail" target="_blank" href="https://mail.163.com/" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -142,7 +134,7 @@
 				
 					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 50%"><a href="/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -169,8 +161,8 @@
   
 
         
-        <a href="/2024/12/03/Graphics-surfaceflinger/" class="archive-article-date">
-  	<time datetime="2024-12-03T15:10:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-12-03</time>
+        <a href="/2024/12/02/Graphics-surfaceflinger/" class="archive-article-date">
+  	<time datetime="2024-12-02T15:10:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-12-02</time>
 </a>
         
       </header>
@@ -178,7 +170,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>SurfaceFlinger 接受缓冲区，对它们进行合成，然后发送到屏幕。WindowManager 为 SurfaceFlinger 提供缓冲区和窗口元数据，而 SurfaceFlinger 可使用这些信息将 Surface 合成到屏幕。</p>
-<p><img src="/2024/12/03/Graphics-surfaceflinger/ape-fwk-graphics.png" alt="图像渲染组件"></p>
+<p><img src="/2024/12/02/Graphics-surfaceflinger/ape-fwk-graphics.png" alt="图像渲染组件"></p>
 <p>每位开发者都应了解有关 Surface、SurfaceHolder、EGLSurface、SurfaceView、GLSurfaceView、SurfaceTexture、TextureView、SurfaceFlinger 和 Vulkan 的知识。</p>
 <p>本页将介绍 Android 系统级图形架构的基本元素，以及应用框架和多媒体系统如何使用这些元素。我们会重点介绍图形数据的缓冲区是如何在系统中移动的。 如果您想了解 SurfaceView 和 TextureView 为何采用相应行为方式，或者 Surface 和 EGLSurface 的交互方式，这里可以为您提供正确解答。</p>
 <p>理解这些内容的前提是您对 Android 设备和应用开发有一定了解。您不需要掌握有关应用框架的详细知识，本文也很少提及 API 调用，但本材料与其他公开文档互不重叠。本文旨在详细介绍渲染帧以进行输出涉及的重要事件，从而帮助您在设计应用时做出明智的选择。为此，我们将从基本原理出发，介绍 UI 类的工作方式，而不是其使用方法。</p>
@@ -285,7 +277,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2024/12/03/Graphics-surfaceflinger/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2024/12/02/Graphics-surfaceflinger/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -299,11 +291,15 @@
   
 <nav id="article-nav">
   
-  
-    <a href="/2024/12/03/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
-      <i class="icon-circle-right"></i>
+    <a href="/2024/12/03/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
     </a>
+  
   
 </nav>
 
@@ -320,6 +316,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%8E%E7%BA%A7%E5%88%AB%E7%BB%84%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text">低级别组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AB%98%E7%BA%A7%E5%88%AB%E7%BB%84%E4%BB%B6"><span class="toc-number">2.</span> <span class="toc-text">高级别组件</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
@@ -344,7 +353,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2024 John Doe
+    		&copy; 2024 qwerhyc
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -362,7 +371,7 @@
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
-		toc_hide_index: true,
+		toc_hide_index: false,
 		root: "/",
 		innerArchive: true,
 		showTags: false
@@ -479,27 +488,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="https://cs.android.com/android/platform/superproject/main?hl=zh-cn" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>aosp</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
+              <a href="http://ahaoframework.tech/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>ahaoframework</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
+              <a href="https://blog.csdn.net/hexiaolong2009/article/details/99225637?spm=1001.2014.3001.5506" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>csdn</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
+              <a href="https://juejin.cn/post/6844904013914374152" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>juejin</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
+              <a href="https://www.jianshu.com/p/f41f98a40455" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>jianshu</a>
             </li>
           
         </ul>
@@ -510,7 +515,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">每天进步一点点&lt;br&gt;&lt;br&gt;奥力给！！</div>
   	  	
     	</section>
     
